@@ -1,0 +1,73 @@
+@import '~styles/_import'
+
+.row
+	display flex
+	flex-flow row wrap
+	margin-right auto
+	margin-left auto
+	max-width ($pageWidth + $colGap)
+	width 100%
+	.row
+		margin-right (-1 * $colGap / 2)
+		margin-left (-1 * $colGap / 2)
+		width auto
+		@media md
+			margin-right -30px
+			margin-left -30px
+		@media desc
+			margin-right -20px
+			margin-left -20px
+		@media tablet
+			margin-right (-1 * $colGap / 4)
+			margin-left (-1 * $colGap / 4)
+		@media mobile
+			margin-right -20px
+			margin-left -20px
+	&.noMargin
+		margin-left 0
+		margin-right 0
+	&VerticalCenter
+		align-items center
+	&VerticalBottom
+		align-items flex-end
+	&Narrow
+		max-width 880px + $colGap
+	&.tablet
+		max-width 810px + $colGap
+
+.center
+	justify-content center
+
+.mauto
+	margin auto !important
+
+.wrapper
+	& + &
+		margin-top 110px
+		@media tablet
+			margin-top 80px
+		@media mobile
+			margin-top 60px
+
+// :global(.wrapper)
+// 	& + &
+// 		margin-top 110px
+// 		@media tablet
+// 			margin-top 60px
+
+.wrapperHalf
+	padding 20px 0
+	& + &
+		padding-top 0
+
+
+.pdAll
+	@media (max-width 1700px)
+		padding-left 40px
+		padding-right 40px
+	@media md
+		padding-left 30px
+		padding-right 30px
+	@media mobile
+		padding-left 0
+		padding-right 0

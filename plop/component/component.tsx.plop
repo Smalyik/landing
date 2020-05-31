@@ -1,0 +1,12 @@
+import React from 'react';
+import s from './{{pascalCase componentName}}.module.sass';
+
+const {{pascalCase componentName}}: React.FC = () => {
+	return (
+		<div>
+			<span className={s.foo}>{{pascalCase componentName}}</span>
+		</div>
+	);
+};
+
+export default {{pascalCase componentName}};

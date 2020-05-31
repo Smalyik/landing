@@ -1,0 +1,78 @@
+@import '~styles/_import'
+
+.col
+	padding-right ($colGap / 2)
+	padding-left ($colGap / 2)
+	flex 0 1 auto
+	box-sizing border-box
+	@media md
+		padding-right 30px
+		padding-left 30px
+	@media desc
+		padding-right ($colGap / 4)
+		padding-left ($colGap / 4)
+	@media mobile
+		padding-right 20px
+		padding-left 20px
+	&Flex
+		display flex
+
+for num in (1 .. 12)
+	.col-{num}
+		width (100% * num / 12)
+		@media mobile
+			width 100%
+	.col-offset-{num}
+		margin-left (100% * num / 12)
+		@media mobile
+			margin-left 0
+
+for num in (1 .. 12)
+	@media md
+		.col-l-{num}
+			width (100% * num / 12)
+	@media tablet
+		.col-md-{num}
+			width (100% * num / 12)
+	@media mobile
+		.col-sm-{num}
+			width (100% * num / 12)
+	@media small
+		.col-xs-{num}
+			width (100% * num / 12)
+
+.fullMobile
+	@media mobile
+		padding-right 0
+		padding-left 0
+		& + &
+			margin-top 20px
+
+sizes = { media: 'desc', let: 'l' }, { media: 'tablet', let: 'md' }, { media: 'small-tablet', let: 'smd' }, { media: 'mobile', let: 'sm' }, { media: 'small', let: 'xs' }
+
+for s in sizes
+	str = s['media']
+	@media str
+		for num in (1 .. 12)
+			.col-{s['let']}-{num}
+				width (100% * num / 12)
+			.col-{s['let']}-offset-{num}
+				margin-left (100% * num / 12)
+	@media str
+		for num in (1 .. 5)
+			.col-{s['let']}-{num}-5
+				width (100% * num / 5)
+
+.pdAll
+	@media (max-width 1700px)
+		padding-left 40px
+		padding-right 40px
+	@media md
+		padding-left 20px
+		padding-right 20px
+	@media (max-width 1280px)
+		padding-left 40px
+		padding-right 40px
+	@media mobile
+		padding-left 0
+		padding-right 0

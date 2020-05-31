@@ -1,0 +1,18 @@
+{
+	"head": {
+		"title": "",
+		"meta": {
+			"keywords": "",
+			"description": ""
+		}
+	},
+	"intro": {
+		"title": "page title",
+		"sub": [
+			"uno",
+			"duo"
+		],
+		"btn": "Click"
+	},
+	"bottomNav": []
+}
