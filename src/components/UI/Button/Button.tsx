@@ -9,8 +9,8 @@ interface Props {
 
 const Button: React.FC<Props> = ({ children, square, transparent }) => {
 	const classNames: string[] = [];
-	square && classNames.push('square-button');
-	transparent && classNames.push('transparent-button');
+	square && classNames.push(s.squareButton);
+	transparent && classNames.push(s.transparentButton);
 
 	return <button className={cx('button', [...classNames])}>{children}</button>;
 };

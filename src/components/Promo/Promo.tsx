@@ -21,9 +21,11 @@ const Promo: React.FC = () => {
 							</Button>
 							<Button square>Hire is now</Button>
 						</div>
-						<ArrowIcon color="#fff" />
 					</div>
 				</Col>
+				<div className={s.arrowContainer}>
+					<ArrowIcon color="#fff" />
+				</div>
 			</Row>
 		</Container>
 	);

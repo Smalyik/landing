@@ -1,5 +1,4 @@
 @import "~bootstrap/scss/bootstrap"
-@import "./_buttons"
 
 body
 	font-family: 'Open Sans', sans-serif
@@ -11,6 +10,20 @@ a
 	text-decoration: none
 	cursor: pointer
 	transition: border-color 0.2s, color 0.2s
+	&:hover,
+	&:focus,
+	&:active
+		text-decoration: none
+		outline: none
+	&:hover
+		color: inherit
+
+button
+	color: inherit
+	outline: none
+	text-decoration: none
+	cursor: pointer
+	transition: border-color 0.2s, color 0.2s, background-color 0.2s
 	&:hover,
 	&:focus,
 	&:active
