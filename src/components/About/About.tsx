@@ -1,11 +1,58 @@
 import React from 'react';
+import cx from 'classnames';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 import s from './About.module.sass';
+
+import internetIcon from '../../images/internet-icon.png';
+import transferIcon from '../../images/transfer-icon.png';
+import headIcon from '../../images/head-icon.png';
 
 const About: React.FC = () => {
 	return (
-		<div>
-			<span className={s.foo}>About</span>
-		</div>
+		<Container className={s.aboutContainer}>
+			<Row className="align-items-center">
+				<Col>
+					<div className={s.titleContainer}>
+						<div className={cx(s.title, 'textBold')}>About us</div>
+						<div className={s.subtitle}>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do&nbsp;eiusmod tempor incididunt
+							ut&nbsp;labore et&nbsp;dolore magna aliqua. Ut&nbsp;enim ad&nbsp;minim veniam,
+						</div>
+					</div>
+				</Col>
+			</Row>
+			<Row className="justify-content-between">
+				<Col>
+					<div className={s.aboutItem}>
+						<img src={internetIcon} alt="internetIcon" />
+						<div className={cx(s.title, 'textSemibold')}>Awesome Icons</div>
+						<div className={s.subtitle}>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+						</div>
+					</div>
+				</Col>
+				<Col>
+					<div className={s.aboutItem}>
+						<img src={transferIcon} alt="transferIcon" />
+						<div className={cx(s.title, 'textSemibold')}>One Page</div>
+						<div className={s.subtitle}>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+						</div>
+					</div>
+				</Col>
+				<Col>
+					<div className={s.aboutItem}>
+						<img src={headIcon} alt="headIcon" />
+						<div className={cx(s.title, 'textSemibold')}>Fully Responsive</div>
+						<div className={s.subtitle}>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+						</div>
+					</div>
+				</Col>
+			</Row>
+		</Container>
 	);
 };
 
