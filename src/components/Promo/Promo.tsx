@@ -1,10 +1,11 @@
 import React from 'react';
-import cx from 'classnames'
+import cx from 'classnames';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Button from '../UI/Button';
 import s from './Promo.module.sass';
-
+import ArrowIcon from '../UI/ArrowIcon';
 
 const Promo: React.FC = () => {
 	return (
@@ -14,10 +15,13 @@ const Promo: React.FC = () => {
 					<div className={s.info}>
 						<div className={s.title}>Web development project</div>
 						<div className={s.subtitle}>Very suitable to support all web development projects</div>
-						<div className={s.buttons}>
-							<button className="square-button square-button--transparent-white">Our services</button>
-							<button className="square-button square-button--green">Hire is now</button>
+						<div className={s.buttonsContainer}>
+							<Button square transparent>
+								Our services
+							</Button>
+							<Button square>Hire is now</Button>
 						</div>
+						<ArrowIcon color="#fff" />
 					</div>
 				</Col>
 			</Row>

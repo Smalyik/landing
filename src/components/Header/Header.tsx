@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
+import cx from 'classnames'
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -9,9 +10,9 @@ const Header: React.FC = () => {
 	return (
 		<header className={s.header}>
 			<Container>
-				<Row>
+				<Row className="align-items-center">
 					<Col>
-						<a className="textBold" href="#">
+						<a className={cx("textBold", s.logo)} href="#">
 							Your logo
 						</a>
 					</Col>
