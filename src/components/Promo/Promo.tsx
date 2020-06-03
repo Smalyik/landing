@@ -16,10 +16,10 @@ const Promo: React.FC = () => {
 						<div className={s.title}>Web development project</div>
 						<div className={s.subtitle}>Very suitable to support all web development projects</div>
 						<div className={s.buttonsContainer}>
-							<Button square transparent>
+							<Button square transparent big>
 								Our services
 							</Button>
-							<Button square>Hire is now</Button>
+							<Button square green big>Hire is now</Button>
 						</div>
 						<ArrowIcon size={[30, 25]} color="#fff" />
 					</div>

@@ -3,6 +3,7 @@ import cx from 'classnames';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Title from '../Title';
 import s from './About.module.sass';
 
 import internetIcon from '../../images/internet-icon.png';
@@ -12,17 +13,10 @@ import headIcon from '../../images/head-icon.png';
 const About: React.FC = () => {
 	return (
 		<Container className={s.aboutContainer}>
-			<Row className="align-items-center">
-				<Col>
-					<div className={s.titleContainer}>
-						<div className={cx(s.title, 'textBold')}>About us</div>
-						<div className={s.subtitle}>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do&nbsp;eiusmod tempor incididunt
-							ut&nbsp;labore et&nbsp;dolore magna aliqua. Ut&nbsp;enim ad&nbsp;minim veniam,
-						</div>
-					</div>
-				</Col>
-			</Row>
+			<Title title="About us">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do&nbsp;eiusmod tempor incididunt ut&nbsp;labore
+				et&nbsp;dolore magna aliqua. Ut&nbsp;enim ad&nbsp;minim veniam,
+			</Title>
 			<Row className="justify-content-between">
 				<Col>
 					<div className={s.aboutItem}>
