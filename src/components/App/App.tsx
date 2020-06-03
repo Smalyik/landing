@@ -4,6 +4,7 @@ import Promo from '../Promo';
 import About from '../About';
 import Services from '../Services';
 import Footer from '../Footer';
+import Pricing from '../Pricing';
 
 const App: React.FC = () => {
 	return (
@@ -13,6 +14,7 @@ const App: React.FC = () => {
 				<Promo />
 				<About />
 				<Services />
+				<Pricing />
 			</main>
 			<Footer />
 		</>

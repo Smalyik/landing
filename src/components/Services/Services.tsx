@@ -2,10 +2,15 @@ import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Title from '../Title';
-import ServiceCard from '../ServiceCard';
+import ServicesCard from './ServicesCard';
+import { ServicesCardProps } from './ServicesCard/ServicesCard';
 import s from './Services.module.sass';
 
-const Services: React.FC = () => {
+interface ServicesComponent {
+	Card: React.FC<ServicesCardProps>;
+}
+
+const Services: React.FC & ServicesComponent = () => {
 	return (
 		<div className={s.serviceContainer}>
 			<Container>
@@ -14,34 +19,36 @@ const Services: React.FC = () => {
 					et&nbsp;dolore magna aliqua. Ut&nbsp;enim ad&nbsp;minim veniam,
 				</Title>
 				<Row>
-					<ServiceCard title="Research">
+					<Services.Card title="Research">
 						At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque
 						corrupti quos.
-					</ServiceCard>
-					<ServiceCard title="Portfolio">
+					</Services.Card>
+					<Services.Card title="Portfolio">
 						At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque
 						corrupti quos.
-					</ServiceCard>
-					<ServiceCard title="Support">
+					</Services.Card>
+					<Services.Card title="Support">
 						At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque
 						corrupti quos.
-					</ServiceCard>
-					<ServiceCard title="Documentation">
+					</Services.Card>
+					<Services.Card title="Documentation">
 						At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque
 						corrupti quos.
-					</ServiceCard>
-					<ServiceCard title="Development">
+					</Services.Card>
+					<Services.Card title="Development">
 						At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque
 						corrupti quos.
-					</ServiceCard>
-					<ServiceCard title="Design">
+					</Services.Card>
+					<Services.Card title="Design">
 						At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque
 						corrupti quos.
-					</ServiceCard>
+					</Services.Card>
 				</Row>
 			</Container>
 		</div>
 	);
 };
+
+Services.Card = ServicesCard;
 
 export default Services;

@@ -5,20 +5,26 @@ import s from './Button.module.sass';
 interface Props {
 	square?: boolean;
 	transparent?: boolean;
-	green?: boolean;
 	transparentGray?: boolean;
+	green?: boolean;
+	gray?: boolean;
 	big?: boolean;
+	medium?: boolean;
 }
 
-const Button: React.FC<Props> = ({ children, square, transparent, green, transparentGray, big }) => {
+const Button: React.FC<Props> = props => {
 	const classNames: string[] = [];
-	square && classNames.push(s.squareButton);
-	transparent && classNames.push(s.transparentButton);
-	green && classNames.push(s.greenButton);
-	transparentGray && classNames.push(s.transparentGrayButton);
-	big && classNames.push(s.bigButton);
+	props.square && classNames.push(s.squareButton);
 
-	return <button className={cx('button', [...classNames])}>{children}</button>;
+	props.transparent && classNames.push(s.transparentButton);
+	props.transparentGray && classNames.push(s.transparentGrayButton);
+	props.green && classNames.push(s.greenButton);
+	props.gray && classNames.push(s.grayButton);
+
+	props.big && classNames.push(s.bigButton);
+	props.medium && classNames.push(s.mediumButton);
+
+	return <button className={cx('button', [...classNames])}>{props.children}</button>;
 };
 
 export default Button;

@@ -1,15 +1,15 @@
 import React from 'react';
 import cx from 'classnames';
 import Col from 'react-bootstrap/Col';
-import SmartphoneIcon from '../UI/SmartphoneIcon';
-import Button from '../UI/Button';
-import s from './ServiceCard.module.sass';
+import SmartphoneIcon from '../../UI/SmartphoneIcon';
+import Button from '../../UI/Button';
+import s from './ServicesCard.module.sass';
 
-interface Props {
+export interface ServicesCardProps {
 	title: string;
 }
 
-const ServiceCard: React.FC<Props> = ({ children, title }) => {
+const ServicesCard: React.FC<ServicesCardProps> = ({ children, title }) => {
 	return (
 		<Col sm={4}>
 			<div className={s.card}>
@@ -24,4 +24,4 @@ const ServiceCard: React.FC<Props> = ({ children, title }) => {
 	);
 };
 
-export default ServiceCard;
+export default ServicesCard;
