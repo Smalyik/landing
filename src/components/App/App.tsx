@@ -5,6 +5,7 @@ import About from '../About';
 import Services from '../Services';
 import Footer from '../Footer';
 import Pricing from '../Pricing';
+import Blog from '../Blog';
 
 const App: React.FC = () => {
 	return (
@@ -15,6 +16,7 @@ const App: React.FC = () => {
 				<About />
 				<Services />
 				<Pricing />
+				<Blog />
 			</main>
 			<Footer />
 		</>
