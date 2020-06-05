@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/landing/static/css/main.e5fe4fd7.chunk.css",
+    "main.js": "/landing/static/js/main.7dc1e951.chunk.js",
+    "main.js.map": "/landing/static/js/main.7dc1e951.chunk.js.map",
+    "runtime-main.js": "/landing/static/js/runtime-main.83538cf4.js",
+    "runtime-main.js.map": "/landing/static/js/runtime-main.83538cf4.js.map",
+    "static/js/2.ef92dd05.chunk.js": "/landing/static/js/2.ef92dd05.chunk.js",
+    "static/js/2.ef92dd05.chunk.js.map": "/landing/static/js/2.ef92dd05.chunk.js.map",
+    "index.html": "/landing/index.html",
+    "precache-manifest.0f29f0548d57c8577f9ade84bfb070fb.js": "/landing/precache-manifest.0f29f0548d57c8577f9ade84bfb070fb.js",
+    "service-worker.js": "/landing/service-worker.js",
+    "static/css/main.e5fe4fd7.chunk.css.map": "/landing/static/css/main.e5fe4fd7.chunk.css.map",
+    "static/js/2.ef92dd05.chunk.js.LICENSE.txt": "/landing/static/js/2.ef92dd05.chunk.js.LICENSE.txt",
+    "static/media/article-1.png": "/landing/static/media/article-1.44cafcfe.png",
+    "static/media/article-2.png": "/landing/static/media/article-2.d58bd79d.png",
+    "static/media/article-3.png": "/landing/static/media/article-3.01b81c5c.png",
+    "static/media/Contact.module.sass": "/landing/static/media/contact-background.2d47069b.png",
+    "static/media/pocket.png": "/landing/static/media/pocket.7a35aab3.png",
+    "static/media/Promo.module.sass": "/landing/static/media/promo-background.73928d5c.png",
+    "static/media/t-shirt.png": "/landing/static/media/t-shirt.f67b67fd.png",
+    "static/media/watches.png": "/landing/static/media/watches.e1bc8ca0.png",
+    "static/media/web-design.jpg": "/landing/static/media/web-design.e252f289.jpg",
+    "static/media/wine.png": "/landing/static/media/wine.360b7080.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.83538cf4.js",
+    "static/js/2.ef92dd05.chunk.js",
+    "static/css/main.e5fe4fd7.chunk.css",
+    "static/js/main.7dc1e951.chunk.js"
+  ]
+}
