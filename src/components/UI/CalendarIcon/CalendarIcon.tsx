@@ -1,5 +1,4 @@
 import React from 'react';
-import s from './CalendarIcon.module.sass';
 
 interface Props {
 	size?: number[];

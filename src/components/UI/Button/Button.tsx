@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import cx from 'classnames';
 import s from './Button.module.sass';
@@ -10,10 +11,16 @@ interface Props {
 	gray?: boolean;
 	big?: boolean;
 	medium?: boolean;
+	link?: boolean;
+	expandable?: boolean;
+	className?: string;
 }
 
 const Button: React.FC<Props> = props => {
 	const classNames: string[] = [];
+
+	props.className && classNames.push(props.className)
+
 	props.square && classNames.push(s.squareButton);
 
 	props.transparent && classNames.push(s.transparentButton);
@@ -24,7 +31,13 @@ const Button: React.FC<Props> = props => {
 	props.big && classNames.push(s.bigButton);
 	props.medium && classNames.push(s.mediumButton);
 
-	return <button className={cx('button', [...classNames])}>{props.children}</button>;
+	props.expandable && classNames.push(s.expandableButton);
+
+	const Element = props.link ?
+		<a href="#" className={cx('button', ...classNames)}>{props.children}</a> :
+		<button className={cx('button', ...classNames)}>{props.children}</button>
+
+	return Element;
 };
 
 export default Button;

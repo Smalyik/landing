@@ -1,5 +1,4 @@
 import React from 'react';
-import s from './FileIcon.module.sass';
 
 interface Props {
 	size?: number[];
