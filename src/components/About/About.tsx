@@ -12,7 +12,7 @@ import headIcon from '../../images/head-icon.png';
 
 const About: React.FC = () => {
 	return (
-		<Container className={s.aboutContainer}>
+		<Container className="article-container">
 			<Title title="About us">
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do&nbsp;eiusmod tempor incididunt ut&nbsp;labore
 				et&nbsp;dolore magna aliqua. Ut&nbsp;enim ad&nbsp;minim veniam,

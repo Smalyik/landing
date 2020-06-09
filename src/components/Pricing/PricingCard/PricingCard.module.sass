@@ -1,3 +1,6 @@
+.cardCol + .cardCol
+	@media screen and ( max-width: 991px )
+		margin-top: 60px
 .card
 	background-color: #fff
 	display: flex
@@ -10,21 +13,26 @@
 		border-top-left-radius: 30px
 		border-bottom-right-radius: 30px
 		box-shadow: 0px 3px 25px 0px rgba(0, 0, 0, 0.35)
+	@media screen and ( max-width: 991px )
+		max-width: 400px
+		margin-left: auto
+		margin-right: auto
 
 
 
 .titleContainer
-	max-width: 370px
 	height: 220px
-	background-image: url('../../../images/pricing-background.png')
-	background-repeat: no-repeat
-	background-size: cover
 	color: #ffffff
 	text-align: center
 	padding-top: 50px
 	margin-bottom: 40px
 	width: 100%
 	transition: border-radius .2s
+	background-color: #3949ab
+	@media screen and ( min-width: 992px )
+		background-image: url('../../../images/pricing-background.png')
+		background-repeat: no-repeat
+		background-size: cover
 
 .title
 	line-height: 1

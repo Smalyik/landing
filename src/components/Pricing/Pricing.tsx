@@ -1,4 +1,5 @@
 import React from 'react';
+import cx from 'classnames';
 import s from './Pricing.module.sass';
 import Row from 'react-bootstrap/Row';
 import Container from 'react-bootstrap/Container';
@@ -12,7 +13,7 @@ interface PricingComponent {
 
 const Pricing: React.FC & PricingComponent = () => {
 	return (
-		<div className={s.pricingContainer}>
+		<div className={cx(s.pricingContainer, 'article-container')}>
 			<Container>
 				<Title title="Pricing Plan">
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do&nbsp;eiusmod tempor incididunt ut&nbsp;labore

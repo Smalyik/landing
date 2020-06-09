@@ -11,7 +11,7 @@ export interface ServicesCardProps {
 
 const ServicesCard: React.FC<ServicesCardProps> = ({ children, title }) => {
 	return (
-		<Col sm={4}>
+		<Col lg={4}>
 			<div className={s.card}>
 				<SmartphoneIcon size={[40, 50]}/>
 				<div className={cx(s.title, 'textSemibold')}>{title}</div>

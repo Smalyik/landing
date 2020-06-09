@@ -1,3 +1,4 @@
+/* eslint-disable no-script-url */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import cx from 'classnames'
@@ -22,7 +23,7 @@ const BlogArticle: React.FC<BlogArticleProps> = ({ children, title, date, type, 
 			</Col>
 			<Col>
 				<div className={s.infoContainer}>
-					<a className={cx(s.title, 'textSemibold')} href="#">
+					<a className={cx(s.title, 'textSemibold')} href="javascript:;">
 						{title}
 					</a>
 					<div className="d-flex textSemibold">

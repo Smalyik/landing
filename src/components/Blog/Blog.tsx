@@ -19,7 +19,7 @@ interface BlogComponent {
 
 const Blog: React.FC & BlogComponent = () => {
 	return (
-		<div className={s.blogContainer}>
+		<div className={cx(s.blogContainer, 'article-container')}>
 			<Container>
 				<Title title="Blog">
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do&nbsp;eiusmod tempor incididunt ut&nbsp;labore

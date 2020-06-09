@@ -1,4 +1,5 @@
 import React from 'react';
+import cx from 'classnames';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Title from '../Title';
@@ -12,7 +13,7 @@ interface ServicesComponent {
 
 const Services: React.FC & ServicesComponent = () => {
 	return (
-		<div className={s.serviceContainer}>
+		<div className={cx(s.serviceContainer, 'article-container')}>
 			<Container>
 				<Title title="Our Services">
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do&nbsp;eiusmod tempor incididunt ut&nbsp;labore

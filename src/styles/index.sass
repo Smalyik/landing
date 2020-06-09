@@ -3,6 +3,9 @@
 body
 	font-family: 'Open Sans', sans-serif
 	color: #212121
+	font-size: 16px
+	@media screen and ( max-width: 1366px )
+		font-size: 14px
 
 a,
 button
@@ -22,6 +25,10 @@ button
 .error
 	background-color: #b42a2a
 
+.article-container
+	padding-top: 125px
+	padding-bottom: 125px
+
 .textBold
 	font-weight: 700
 
@@ -30,3 +37,8 @@ button
 
 .textLight
 	font-weight: 300
+
+.container,
+.container-sm
+	@media (min-width: 576px) and (max-width: 991px)
+		max-width: calc(100% - 60px)

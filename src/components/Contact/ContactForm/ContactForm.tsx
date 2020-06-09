@@ -51,7 +51,7 @@ const ContactForm: React.FC = () => {
 	return !formSent ? (
 		<form>
 			<Row className="justify-content-center">
-				<Col xs={5}>
+				<Col md={5}>
 					<input
 						onChange={handleNameChange}
 						id="cname"
@@ -61,7 +61,7 @@ const ContactForm: React.FC = () => {
 						value={name}
 					/>
 				</Col>
-				<Col xs={5}>
+				<Col md={5}>
 					<input
 						onChange={handleEmailChange}
 						id="cemail"
@@ -73,12 +73,12 @@ const ContactForm: React.FC = () => {
 				</Col>
 			</Row>
 			<Row className="justify-content-center">
-				<Col xs={10}>
+				<Col md={10}>
 					<textarea className={s.textarea} placeholder="Write Message" />
 				</Col>
 			</Row>
 			<Row className="justify-content-center">
-				<Col xs={10}>
+				<Col md={10}>
 					<div className="d-flex justify-content-end">
 						<div onClick={handleSubmit}>
 							<Button round white big>

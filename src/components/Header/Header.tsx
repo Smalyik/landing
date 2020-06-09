@@ -1,3 +1,4 @@
+/* eslint-disable no-script-url */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import cx from 'classnames'
@@ -11,40 +12,38 @@ const Header: React.FC = () => {
 		<header className={s.header}>
 			<Container>
 				<Row className="align-items-center">
-					<Col>
-						<a className={cx("textBold", s.logo)} href="#">
+					<Col className="d-flex justify-content-between">
+						<a className={cx("textBold", s.logo)} href="javascript:;">
 							Your logo
 						</a>
-					</Col>
-					<Col className="ml-auto">
 						<ul className={s.list}>
 							<li>
-								<a className={s.link} href="#">
+								<a className={s.link} href="javascript:;">
 									Home
 								</a>
 							</li>
 							<li>
-								<a className={s.link} href="#">
+								<a className={s.link} href="javascript:;">
 									About
 								</a>
 							</li>
 							<li>
-								<a className={s.link} href="#">
+								<a className={s.link} href="javascript:;">
 									Servicing
 								</a>
 							</li>
 							<li>
-								<a className={s.link} href="#">
+								<a className={s.link} href="javascript:;">
 									Portfolio
 								</a>
 							</li>
 							<li>
-								<a className={s.link} href="#">
+								<a className={s.link} href="javascript:;">
 									Blog
 								</a>
 							</li>
 							<li>
-								<a className={s.link} href="#">
+								<a className={s.link} href="javascript:;">
 									Contact us
 								</a>
 							</li>

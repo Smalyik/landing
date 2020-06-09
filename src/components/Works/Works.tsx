@@ -7,7 +7,7 @@ import Title from '../Title';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from '../UI/Button';
-import ProjectCard from '../ProjectCard';
+import ProjectCard from './ProjectCard';
 
 import watchesImage from '../../images/watches.png';
 import pocketImage from '../../images/pocket.png';
@@ -17,7 +17,7 @@ import webImage from '../../images/web-design.jpg';
 
 const Work: React.FC = () => {
 	return (
-		<div className={s.worksContainer}>
+		<div className="article-container">
 			<Container>
 				<Title title="Latest Works">
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do&nbsp;eiusmod tempor incididunt ut&nbsp;labore
@@ -51,90 +51,42 @@ const Work: React.FC = () => {
 					<Row className="justify-content-center">
 						<TabPanel className={s.panel}>
 							<Row>
-								<Col xs={4}>
-									<ProjectCard image={watchesImage} name={'Hand Watch'} type={'ui/ux design'} />
-								</Col>
-								<Col xs={4}>
-									<ProjectCard image={tShirtImage} name={'T-shirt'} type={'mockups'} />
-								</Col>
-								<Col xs={4}>
-									<ProjectCard image={pocketImage} name={'Pocket'} type={'ui/ux design'} />
-								</Col>
-								<Col xs={4}>
-									<ProjectCard image={wineImage} name={'Wine'} type={'mockups'} />
-								</Col>
-								<Col xs={4}>
-									<ProjectCard image={webImage} name={'Web Design'} type={'web design'} />
-								</Col>
-								<Col xs={4}>
-									<ProjectCard image={watchesImage} name={'Hand Watch'} type={'ui/ux design'} />
-								</Col>
+								<ProjectCard image={watchesImage} name={'Hand Watch'} type={'ui/ux design'} />
+								<ProjectCard image={tShirtImage} name={'T-shirt'} type={'mockups'} />
+								<ProjectCard image={pocketImage} name={'Pocket'} type={'ui/ux design'} />
+								<ProjectCard image={wineImage} name={'Wine'} type={'mockups'} />
+								<ProjectCard image={webImage} name={'Web Design'} type={'web design'} />
+								<ProjectCard image={watchesImage} name={'Hand Watch'} type={'ui/ux design'} />
 							</Row>
 						</TabPanel>
 						<TabPanel className={s.panel}>
 							<Row>
-								<Col xs={4}>
-									<ProjectCard image={webImage} name={'Web Design'} type={'web design'} />
-								</Col>
-								<Col xs={4}>
-									<ProjectCard image={webImage} name={'Web Design'} type={'web design'} />
-								</Col>
-								<Col xs={4}>
-									<ProjectCard image={webImage} name={'Web Design'} type={'web design'} />
-								</Col>
-								<Col xs={4}>
-									<ProjectCard image={webImage} name={'Web Design'} type={'web design'} />
-								</Col>
-								<Col xs={4}>
-									<ProjectCard image={webImage} name={'Web Design'} type={'web design'} />
-								</Col>
-								<Col xs={4}>
-									<ProjectCard image={webImage} name={'Web Design'} type={'web design'} />
-								</Col>
+								<ProjectCard image={webImage} name={'Web Design'} type={'web design'} />
+								<ProjectCard image={webImage} name={'Web Design'} type={'web design'} />
+								<ProjectCard image={webImage} name={'Web Design'} type={'web design'} />
+								<ProjectCard image={webImage} name={'Web Design'} type={'web design'} />
+								<ProjectCard image={webImage} name={'Web Design'} type={'web design'} />
+								<ProjectCard image={webImage} name={'Web Design'} type={'web design'} />
 							</Row>
 						</TabPanel>
 						<TabPanel className={s.panel}>
 							<Row>
-								<Col xs={4}>
-									<ProjectCard image={pocketImage} name={'Pocket'} type={'ui/ux design'} />
-								</Col>
-								<Col xs={4}>
-									<ProjectCard image={watchesImage} name={'Hand Watch'} type={'ui/ux design'} />
-								</Col>
-								<Col xs={4}>
-									<ProjectCard image={pocketImage} name={'Pocket'} type={'ui/ux design'} />
-								</Col>
-								<Col xs={4}>
-									<ProjectCard image={watchesImage} name={'Hand Watch'} type={'ui/ux design'} />
-								</Col>
-								<Col xs={4}>
-									<ProjectCard image={pocketImage} name={'Pocket'} type={'ui/ux design'} />
-								</Col>
-								<Col xs={4}>
-									<ProjectCard image={watchesImage} name={'Hand Watch'} type={'ui/ux design'} />
-								</Col>
+								<ProjectCard image={pocketImage} name={'Pocket'} type={'ui/ux design'} />
+								<ProjectCard image={watchesImage} name={'Hand Watch'} type={'ui/ux design'} />
+								<ProjectCard image={pocketImage} name={'Pocket'} type={'ui/ux design'} />
+								<ProjectCard image={watchesImage} name={'Hand Watch'} type={'ui/ux design'} />
+								<ProjectCard image={pocketImage} name={'Pocket'} type={'ui/ux design'} />
+								<ProjectCard image={watchesImage} name={'Hand Watch'} type={'ui/ux design'} />
 							</Row>
 						</TabPanel>
 						<TabPanel className={s.panel}>
 							<Row>
-								<Col xs={4}>
-									<ProjectCard image={tShirtImage} name={'T-shirt'} type={'mockups'} />
-								</Col>
-								<Col xs={4}>
-									<ProjectCard image={wineImage} name={'Wine'} type={'mockups'} />
-								</Col>
-								<Col xs={4}>
-									<ProjectCard image={tShirtImage} name={'T-shirt'} type={'mockups'} />
-								</Col>
-								<Col xs={4}>
-									<ProjectCard image={wineImage} name={'Wine'} type={'mockups'} />
-								</Col>
-								<Col xs={4}>
-									<ProjectCard image={tShirtImage} name={'T-shirt'} type={'mockups'} />
-								</Col>
-								<Col xs={4}>
-									<ProjectCard image={wineImage} name={'Wine'} type={'mockups'} />
-								</Col>
+								<ProjectCard image={tShirtImage} name={'T-shirt'} type={'mockups'} />
+								<ProjectCard image={wineImage} name={'Wine'} type={'mockups'} />
+								<ProjectCard image={tShirtImage} name={'T-shirt'} type={'mockups'} />
+								<ProjectCard image={wineImage} name={'Wine'} type={'mockups'} />
+								<ProjectCard image={tShirtImage} name={'T-shirt'} type={'mockups'} />
+								<ProjectCard image={wineImage} name={'Wine'} type={'mockups'} />
 							</Row>
 						</TabPanel>
 					</Row>

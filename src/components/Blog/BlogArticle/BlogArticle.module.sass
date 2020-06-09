@@ -1,8 +1,15 @@
-.articleRow:nth-child(2n)
-	flex-direction: row-reverse
+.articleRow
+	&:nth-child(2n)
+		flex-direction: row-reverse
+	@media screen and ( max-width: 767px )
+		flex-direction: column-reverse
+		& + &
+			margin-top: 50px
 
 .infoContainer
 	padding-top: 60px
+	@media screen and ( max-width: 767px )
+		padding-top: 0
 
 .title
 	font-size: 1.562em
@@ -14,6 +21,10 @@
 .image
 	width: 100%
 	height: 400px
+	@media screen and ( max-width: 991px)
+		height: 350px
+	@media screen and ( max-width: 767px)
+		display: none
 
 .info
 	display: flex

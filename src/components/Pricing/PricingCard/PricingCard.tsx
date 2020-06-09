@@ -1,4 +1,5 @@
 import React from 'react';
+import cx from 'classnames'
 import s from './PricingCard.module.sass';
 import Col from 'react-bootstrap/Col';
 import Button from '../../UI/Button';
@@ -11,7 +12,7 @@ export interface PricingCardProps {
 
 const PricingCard: React.FC<PricingCardProps> = ({ title, price, cardAdvantages }) => {
 	return (
-		<Col sm={4}>
+		<Col lg={4} sm={7} className={cx(s.cardCol, 'ml-auto', 'mr-auto')}>
 			<div className={s.card}>
 				<div className={s.titleContainer}>
 					<div className={s.title}>{title}</div>
