@@ -5,7 +5,7 @@ const Footer: React.FC = () => {
 	const year = new Date().getFullYear();
 
 	return (
-		<div className={s.footer}>
+		<div className={s.footer} id="Header">
 			<span className="textBold"> All rights Reserved © {year}</span>
 		</div>
 	);

@@ -1,6 +1,17 @@
 @import "~bootstrap/scss/bootstrap"
+html, body
+	margin: 0
+	padding: 0
+
+*, *::after, *::before
+	box-sizing: border-box
 
 body
+	display: flex
+	flex-direction: column
+	min-height: 100vh
+	justify-content: center
+	text-rendering: optimizeLegibility
 	font-family: 'Open Sans', sans-serif
 	color: #212121
 	font-size: 16px
@@ -28,6 +39,9 @@ button
 .article-container
 	padding-top: 125px
 	padding-bottom: 125px
+	@media screen and ( max-width: 767px )
+		padding-top: 70px
+		padding-bottom: 70px
 
 .textBold
 	font-weight: 700
@@ -42,3 +56,5 @@ button
 .container-sm
 	@media (min-width: 576px) and (max-width: 991px)
 		max-width: calc(100% - 60px)
+	@media (max-width: 575px)
+		max-width: calc(100% - 30px)

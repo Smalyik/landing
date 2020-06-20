@@ -13,7 +13,7 @@ interface PricingComponent {
 
 const Pricing: React.FC & PricingComponent = () => {
 	return (
-		<div className={cx(s.pricingContainer, 'article-container')}>
+		<div className={cx(s.pricingContainer, 'article-container')} id="Pricing">
 			<Container>
 				<Title title="Pricing Plan">
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do&nbsp;eiusmod tempor incididunt ut&nbsp;labore

@@ -12,13 +12,13 @@ import headIcon from '../../images/head-icon.png';
 
 const About: React.FC = () => {
 	return (
-		<Container className="article-container">
+		<Container className="article-container" id="About">
 			<Title title="About us">
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do&nbsp;eiusmod tempor incididunt ut&nbsp;labore
 				et&nbsp;dolore magna aliqua. Ut&nbsp;enim ad&nbsp;minim veniam,
 			</Title>
 			<Row className="justify-content-between">
-				<Col>
+				<Col sm={4} xs={12}>
 					<div className={s.aboutItem}>
 						<img src={internetIcon} alt="internetIcon" />
 						<div className={cx(s.title, 'textSemibold')}>Awesome Icons</div>
@@ -27,7 +27,7 @@ const About: React.FC = () => {
 						</div>
 					</div>
 				</Col>
-				<Col>
+				<Col sm={4} xs={12}>
 					<div className={s.aboutItem}>
 						<img src={transferIcon} alt="transferIcon" />
 						<div className={cx(s.title, 'textSemibold')}>One Page</div>
@@ -36,7 +36,7 @@ const About: React.FC = () => {
 						</div>
 					</div>
 				</Col>
-				<Col>
+				<Col sm={4} xs={12}>
 					<div className={s.aboutItem}>
 						<img src={headIcon} alt="headIcon" />
 						<div className={cx(s.title, 'textSemibold')}>Fully Responsive</div>

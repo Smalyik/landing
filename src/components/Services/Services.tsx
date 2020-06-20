@@ -13,7 +13,7 @@ interface ServicesComponent {
 
 const Services: React.FC & ServicesComponent = () => {
 	return (
-		<div className={cx(s.serviceContainer, 'article-container')}>
+		<div className={cx(s.serviceContainer, 'article-container')} id="Services">
 			<Container>
 				<Title title="Our Services">
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do&nbsp;eiusmod tempor incididunt ut&nbsp;labore

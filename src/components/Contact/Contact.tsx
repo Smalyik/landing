@@ -7,7 +7,7 @@ import ContactForm from './ContactForm';
 
 const Contact: React.FC = () => {
 	return (
-		<div className={cx(s.contactContainer, 'article-container')}>
+		<div className={cx(s.contactContainer, 'article-container')} id="Contact">
 			<Container>
 				<Title title="Contact Us">
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do&nbsp;eiusmod tempor incididunt ut&nbsp;labore

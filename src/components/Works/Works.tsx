@@ -17,7 +17,7 @@ import webImage from '../../images/web-design.jpg';
 
 const Work: React.FC = () => {
 	return (
-		<div className="article-container">
+		<div className="article-container" id="Works">
 			<Container>
 				<Title title="Latest Works">
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do&nbsp;eiusmod tempor incididunt ut&nbsp;labore

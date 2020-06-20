@@ -6,11 +6,12 @@ import Col from 'react-bootstrap/Col';
 import Button from '../UI/Button';
 import s from './Promo.module.sass';
 import ArrowIcon from '../UI/ArrowIcon';
+import backgroundImage from '../../images/promo-background.png';
 
 const Promo: React.FC = () => {
 	return (
-		<Container fluid>
-			<Row className={cx(s.promo, 'align-items-center')}>
+		<Container fluid id="Promo">
+			<Row className={cx(s.promo, 'align-items-center')} style={{backgroundImage: `url(${backgroundImage})`}}>
 				<Col>
 					<div className={s.info}>
 						<div className={s.title}>Web development project</div>
@@ -19,7 +20,9 @@ const Promo: React.FC = () => {
 							<Button square transparent big>
 								Our services
 							</Button>
-							<Button square green big>Hire is now</Button>
+							<Button square green big>
+								Hire is now
+							</Button>
 						</div>
 						<ArrowIcon size={[30, 25]} color="#fff" />
 					</div>

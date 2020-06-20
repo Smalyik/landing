@@ -11,7 +11,7 @@ import Contact from '../Contact';
 
 const App: React.FC = () => {
 	return (
-		<>
+		<div id="App">
 			<Header />
 			<main>
 				<Promo />
@@ -23,7 +23,7 @@ const App: React.FC = () => {
 				<Contact />
 			</main>
 			<Footer />
-		</>
+		</div>
 	);
 };
 

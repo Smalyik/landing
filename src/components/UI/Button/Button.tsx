@@ -39,7 +39,7 @@ const Button: React.FC<Props> = props => {
 	props.expandable && classNames.push(s.expandableButton);
 
 	const Element = props.link ?
-		<a href="javascript:;" className={cx(s.button, ...classNames)}>{props.children}</a> :
+		<a href="#" className={cx(s.button, ...classNames)}>{props.children}</a> :
 		<button className={cx(s.button, ...classNames)}>{props.children}</button>
 
 	return Element;

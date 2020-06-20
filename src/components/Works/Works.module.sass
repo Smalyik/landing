@@ -6,6 +6,11 @@
 	margin-bottom: 60px
 	li + li
 		margin-left: 25px
+	@media screen and ( max-width: 767px )
+		flex-wrap: wrap
+		li + li
+			margin-top: 15px
+			margin-left: 0px
 
 .tab
 	button
@@ -13,6 +18,10 @@
 		background-color: #ffffff
 		&:hover
 			border: 2px solid #00897b
+	@media screen and ( max-width: 767px )
+		flex-basis: 100%
+		button
+			width: 100%
 
 .selectedTab
 	button

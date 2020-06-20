@@ -23,7 +23,7 @@ const BlogArticle: React.FC<BlogArticleProps> = ({ children, title, date, type, 
 			</Col>
 			<Col>
 				<div className={s.infoContainer}>
-					<a className={cx(s.title, 'textSemibold')} href="javascript:;">
+					<a className={cx(s.title, 'textSemibold')} href="#">
 						{title}
 					</a>
 					<div className="d-flex textSemibold">

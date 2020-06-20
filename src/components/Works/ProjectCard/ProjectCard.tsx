@@ -14,7 +14,7 @@ interface Props {
 const ProjectCard: React.FC<Props> = ({ image, name, type }) => {
 	return (
 		<Col lg={4} sm={8} className="ml-auto mr-auto">
-			<a href="javascript:;">
+			<a href="#">
 				<div className={s.projectCard}>
 					<img src={image} alt={name} />
 					<div className={cx(s.info, 'textSemibold')}>
