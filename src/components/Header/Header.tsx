@@ -18,45 +18,33 @@ const Header: React.FC = () => {
 						</a>
 						<ul className={s.list}>
 							<li>
-								<Link smooth={true} to="About">
-									<a className={s.link} href="#">
-										About
-									</a>
+								<Link smooth={true} to="About" className={s.link}>
+									About
 								</Link>
 							</li>
 							<li>
-								<Link smooth={true} to="Services">
-									<a className={s.link} href="#">
-										Servicing
-									</a>
+								<Link smooth={true} to="Services" className={s.link}>
+									Servicing
 								</Link>
 							</li>
 							<li>
-								<Link smooth={true} to="Works">
-									<a className={s.link} href="#">
-										Portfolio
-									</a>
+								<Link smooth={true} to="Works" className={s.link}>
+									Portfolio
 								</Link>
 							</li>
 							<li>
-								<Link smooth={true} to="Pricing">
-									<a className={s.link} href="#">
-										Products
-									</a>
+								<Link smooth={true} to="Pricing" className={s.link}>
+									Products
 								</Link>
 							</li>
 							<li>
-								<Link smooth={true} to="Blog">
-									<a className={s.link} href="#">
-										Blog
-									</a>
+								<Link smooth={true} to="Blog" className={s.link}>
+									Blog
 								</Link>
 							</li>
 							<li>
-								<Link smooth={true} to="Contact">
-									<a className={s.link} href="#">
-										Contact Us
-									</a>
+								<Link smooth={true} to="Contact" className={s.link}>
+									Contact Us
 								</Link>
 							</li>
 						</ul>
