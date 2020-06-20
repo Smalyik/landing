@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/landing/static/css/main.95086dcb.chunk.css",
-    "main.js": "/landing/static/js/main.f1c029d8.chunk.js",
-    "main.js.map": "/landing/static/js/main.f1c029d8.chunk.js.map",
+    "main.css": "/landing/static/css/main.9f29ba09.chunk.css",
+    "main.js": "/landing/static/js/main.eab32eb4.chunk.js",
+    "main.js.map": "/landing/static/js/main.eab32eb4.chunk.js.map",
     "runtime-main.js": "/landing/static/js/runtime-main.83538cf4.js",
     "runtime-main.js.map": "/landing/static/js/runtime-main.83538cf4.js.map",
-    "static/js/2.4803ec47.chunk.js": "/landing/static/js/2.4803ec47.chunk.js",
-    "static/js/2.4803ec47.chunk.js.map": "/landing/static/js/2.4803ec47.chunk.js.map",
+    "static/js/2.1540f420.chunk.js": "/landing/static/js/2.1540f420.chunk.js",
+    "static/js/2.1540f420.chunk.js.map": "/landing/static/js/2.1540f420.chunk.js.map",
     "index.html": "/landing/index.html",
-    "precache-manifest.df9f838738c494ec6e8d8a789b874443.js": "/landing/precache-manifest.df9f838738c494ec6e8d8a789b874443.js",
+    "precache-manifest.8a041e07bd7eb1669626ae79d39ae17e.js": "/landing/precache-manifest.8a041e07bd7eb1669626ae79d39ae17e.js",
     "service-worker.js": "/landing/service-worker.js",
-    "static/css/main.95086dcb.chunk.css.map": "/landing/static/css/main.95086dcb.chunk.css.map",
-    "static/js/2.4803ec47.chunk.js.LICENSE.txt": "/landing/static/js/2.4803ec47.chunk.js.LICENSE.txt",
+    "static/css/main.9f29ba09.chunk.css.map": "/landing/static/css/main.9f29ba09.chunk.css.map",
+    "static/js/2.1540f420.chunk.js.LICENSE.txt": "/landing/static/js/2.1540f420.chunk.js.LICENSE.txt",
     "static/media/article-1.png": "/landing/static/media/article-1.44cafcfe.png",
     "static/media/article-2.png": "/landing/static/media/article-2.d58bd79d.png",
     "static/media/article-3.png": "/landing/static/media/article-3.01b81c5c.png",
     "static/media/Contact.module.sass": "/landing/static/media/contact-background.2d47069b.png",
     "static/media/pocket.png": "/landing/static/media/pocket.7a35aab3.png",
-    "static/media/Promo.module.sass": "/landing/static/media/promo-background.73928d5c.png",
+    "static/media/promo-background.png": "/landing/static/media/promo-background.73928d5c.png",
     "static/media/t-shirt.png": "/landing/static/media/t-shirt.f67b67fd.png",
     "static/media/watches.png": "/landing/static/media/watches.e1bc8ca0.png",
     "static/media/web-design.jpg": "/landing/static/media/web-design.e252f289.jpg",
@@ -25,8 +25,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.83538cf4.js",
-    "static/js/2.4803ec47.chunk.js",
-    "static/css/main.95086dcb.chunk.css",
-    "static/js/main.f1c029d8.chunk.js"
+    "static/js/2.1540f420.chunk.js",
+    "static/css/main.9f29ba09.chunk.css",
+    "static/js/main.eab32eb4.chunk.js"
   ]
 }
